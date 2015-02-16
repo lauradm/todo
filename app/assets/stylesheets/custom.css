@@ -1,0 +1,21 @@
+.cabeza {
+	background-color: #dddddd;
+	border-bottom: gray solid 2px;
+
+}
+.logo{
+	width: 100px;
+	margin: 20px;
+}
+.titlepage{
+	padding-top: 40px;
+}
+.slogan h4{
+	padding-top: 45px;
+	color: red;
+
+}
+.arbol {
+	margin-top: 25px;
+	height:500px;
+}
