@@ -1,26 +1,65 @@
-<h1>Listado de tareas</h1>
+            <div class="large-8 columns">
+              <div class="row">
+     
+                
+<!-- MODELO estátcio-->
 
-<table>
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Estado</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+                <div class="large-4 small-6 columns">
+                  <img src="http://placehold.it/500x500&text=Thumbnail">
+     
+                  <div class="panel">
+                    <h5>Item Name</h5>
+                    <h6 class="subheader">$000.00</h6>
+                  </div>
+                </div>
+     
+<!-- cierra MODELO estátcio-->
 
-  <tbody>
     <% @tasks.each do |task| %>
-      <tr>
-        <td><%= task.description %></td>
-        <td><%= task.status %></td>
-        <td><%= link_to 'Mostrar', task %></td>
-        <td><%= link_to 'Editar', edit_task_path(task) %></td>
-        <td><%= link_to 'Borrar', task, method: :delete, data: { confirm: '¿Seguro?' } %></td>
-      </tr>
+
+                <div class="large-4 small-6 columns">
+                  <img src="http://placehold.it/500x500&text=Thumbnail">
+     
+                  <div class="panel">
+                    <h5><%= task.description %> <%= link_to 'Mostrar', task %>
+        <%= link_to 'Editar', edit_task_path(task) %>
+        <%= link_to 'Borrar', task, method: :delete, data: { confirm: '¿Seguro?' } %></h5>
+                    <h6 class="subheader"><%= task.status %></h6>
+                  </div>
+                </div>
     <% end %>
-  </tbody>
-</table>
+
+              </div>
+     
+         
+     
+     
+         
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="panel">
+                    <div class="row">
+     
+                      <div class="large-2 small-6 columns">
+                        <img src="http://placehold.it/300x300&text=Site Owner">
+                      </div>
+     
+                      <div class="large-10 small-6 columns">
+                        <strong>This Site Is Managed By<hr/></strong>
+     
+                        Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+                      </div>
+     
+                    </div>
+                  </div>
+                </div>
+     
+         
+     
+              </div>
+            </div>
+          </div>
+
 
 <br>
 
