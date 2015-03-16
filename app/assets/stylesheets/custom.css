@@ -93,4 +93,16 @@
 }
 
 
+.slogan {
+	top: 500px;
+	position: absolute;
+	margin: 60px;
+	font-size: 30px;
+	line-height: 45px;
+	color: white;
+	text-shadow: 0.1em 0.1em #333;
+}
+
+
+
 

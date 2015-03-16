@@ -6,3 +6,14 @@ jQuery ->
 		fade: true,
 
 	})
+
+
+jQuery ->
+	$('.slick_block2').slick({
+	    autoplay: true,
+	    speed: 1000,
+	    autoplaySpeed: 5000,
+		fade: true,
+		arrows: false,
+
+	})
