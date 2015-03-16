@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
+
+  root 'welcome#login'
+
+
   get 'welcome/aboutus'
 
   get 'welcome/legal'
 
   get 'welcome/support'
 
-  root 'tasks#index'
+
+
+
 
   resources :tasks do
     resources :replies

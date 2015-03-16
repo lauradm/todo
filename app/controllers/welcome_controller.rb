@@ -1,4 +1,16 @@
 class WelcomeController < ApplicationController
+  
+
+
+layout 'layouts/flash',  only: [:login]
+
+
+  def login
+
+  	
+  end
+
+
   def aboutus
   end
 

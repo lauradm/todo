@@ -26,3 +26,71 @@
 	color:white;
 	border-top: black solid 2px;
 }
+
+
+
+
+
+
+
+.marco {
+  width: 100%;/*300*/
+  position: absolute;
+  top:0px;
+  z-index: -10;
+  overflow: hidden;
+  }
+.slogans{
+	position: absolute;
+	top:100px;
+	margin-left: 5%;
+	color: white;
+	font-size: 5em;
+	line-height: 50px;
+}
+.pic{
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+.input {
+	position: absolute;
+	left: 50%;
+	border: grey solid 1px;
+	top: 200px;
+	background: white;
+	opacity: .8;
+	border-radius: 4px;
+}
+
+
+
+.caja {
+	width: 200px;
+	border: grey solid 1px;
+	margin: 20px;
+	padding: 5px;
+	border-radius: 4px;
+
+}
+
+
+.boton	{
+	position: relative;
+	padding: 5px;
+	background-color: #7aa9ee;
+	width: 60px;
+	margin: 15px;
+	left: 150px;
+	border-radius: 4px;
+	font-size: 17px;
+}
+
+
+
