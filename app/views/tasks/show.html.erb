@@ -7,7 +7,7 @@
 
 <p>
   <strong>Estado:</strong>
-  <%= @task.status %>
+  <%= @task.status ? 'Completado' : 'Convocatoria abierta' %>
 </p>
 
 <%= link_to 'Editar', edit_task_path(@task) %> |

@@ -24,7 +24,7 @@
                     <h5><%= task.description %> <%= link_to 'Mostrar', task %>
         <%= link_to 'Editar', edit_task_path(task) %>
         <%= link_to 'Borrar', task, method: :delete, data: { confirm: '¿Seguro?' } %></h5>
-                    <h6 class="subheader"><%= task.status %></h6>
+                    <h6 class="subheader"><%= task.status  ? 'Completado' : 'Convocatoria abierta' %></h6>
                   </div>
                 </div>
     <% end %>
