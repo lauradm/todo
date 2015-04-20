@@ -1,7 +1,10 @@
             <div class="large-8 columns">
               <div class="row">
      
-                
+     <%= link_to 'Nueva Tarea', new_task_path, remote: :true %>
+     <div id="new_task" style="display:none;"></div>
+     <div id="hola"></div>   
+
 <!-- MODELO estátcio-->
 
                 <div class="large-4 small-6 columns">
@@ -63,4 +66,4 @@
 
 <br>
 
-<%= link_to 'Nueva Tarea', new_task_path %>
+
