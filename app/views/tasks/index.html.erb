@@ -1,69 +1,31 @@
-            <div class="large-8 columns">
-              <div class="row">
      
-     <%= link_to 'Nueva Tarea', new_task_path, remote: :true %>
-     <div id="new_task" style="display:none;"></div>
-     <div id="hola"></div>   
 
-<!-- MODELO estátcio-->
-
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/500x500&text=Thumbnail">
+<div class="row">
+      <%= link_to 'Nueva Tarea', new_task_path, remote: :true %>
+      <div id="new_task" style="display:none;"></div>
+</div>
+            
+<div class="row" id="tablaprincipal">
      
-                  <div class="panel">
-                    <h5>Item Name</h5>
-                    <h6 class="subheader">$000.00</h6>
-                  </div>
-                </div>
-     
-<!-- cierra MODELO estátcio-->
-
     <% @tasks.each do |task| %>
-
-                <div class="large-4 small-6 columns">
-                  <img src="http://placehold.it/500x500&text=Thumbnail">
-     
-                  <div class="panel" id='task<%=task.id%>'>
-                    <h5><%= task.description %> <%= link_to 'Mostrar', task %>
-                    <%= link_to 'Editar', edit_task_path(task) %>
-                    <%= link_to 'Borrar', task, remote: :true, method: :delete, data: { confirm: '¿Seguro?' } %></h5>
-                    <h6 class="subheader"><%= task.status  ? 'Completado' : 'Convocatoria abierta' %></h6>
-                  </div>
-                </div>
+      <%= render task%>
     <% end %>
 
-              </div>
-     
+</div>
          
-     
-     
-         
-              <div class="row">
-                <div class="large-12 columns">
+<div class="row">
+    <div class="large-12 columns">
                   <div class="panel">
                     <div class="row">
-     
                       <div class="large-2 small-6 columns">
                         <img src="http://placehold.it/300x300&text=Site Owner">
                       </div>
-     
                       <div class="large-10 small-6 columns">
-                        <strong>This Site Is Managed By<hr/></strong>
-     
-                        Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+                        <strong>Esta página pertenece a Solitask<hr/></strong>
+                        La Fe mueve montañas.
                       </div>
-     
                     </div>
                   </div>
-                </div>
-     
-         
-     
-              </div>
-            </div>
-          </div>
-
-
-<br>
-
-
+     </div>
+</div>
+      

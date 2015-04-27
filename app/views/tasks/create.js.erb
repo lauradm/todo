@@ -1,2 +1,3 @@
-$('#hola').append('<%= escape_javascript(@task.to_json)%>')
+$('#tablaprincipal').prepend('<%= escape_javascript(render @task)%>')
 $('#new_task').empty()
+$('#task<%=@task.id%>').effect('highlight')

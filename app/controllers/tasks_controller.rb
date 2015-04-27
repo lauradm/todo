@@ -6,7 +6,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    @tasks = Task.last(6)
   end
 
   # GET /tasks/1
