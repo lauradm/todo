@@ -6,7 +6,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.last(6)
+    @tasks = Task.order(updated_at: :desc).limit(6)
   end
 
   # GET /tasks/1
@@ -49,6 +49,7 @@ class TasksController < ApplicationController
       if @task.update(task_params)
         format.html { redirect_to @task, notice: 'Task was successfully updated.' }
         format.json { render :show, status: :ok, location: @task }
+        format.js { render :update }
       else
         format.html { render :edit }
         format.json { render json: @task.errors, status: :unprocessable_entity }
