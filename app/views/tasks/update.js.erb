@@ -1,4 +1,4 @@
 $('#task<%=@task.id%>').remove()
 $('#tablaprincipal').prepend('<%= escape_javascript(render @task)%>')
 $('#new_task').empty()
-$('#task<%=@task.id%> > div').css('border','red solid 2px')
+$('#task<%=@task.id%> > div').addClass('ourhighlight')

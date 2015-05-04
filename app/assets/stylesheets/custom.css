@@ -98,6 +98,21 @@
 	text-shadow: 0.1em 0.1em #333;
 }
 
+.ourbutton {
+	position: relative;
+	margin-top: 20px;
+	margin-right: 0px;
+}
+
+
+a.ourb:hover, a.ourb:active, a.ourb:link, a.ourb:visited {
+	padding: 4px;
+}
+
+.ourhighlight {
+	background-color: yellow;
+}
+
 
 
 
