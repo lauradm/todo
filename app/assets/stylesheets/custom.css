@@ -22,11 +22,14 @@
 
 .footer{
 	margin-top: 20px;
-	color:white;
+	color: white;
 	background-color:#333;
 	border-top: black solid 2px;
 }
 
+.footer h3 {
+	color: white;
+}
 
 .marco {
   width: 100%;/*300*/
