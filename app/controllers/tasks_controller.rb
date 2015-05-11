@@ -1,4 +1,4 @@
-class TasksController < ApplicationController
+  class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   layout 'principal'
@@ -76,6 +76,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:description, :status)
+      params.require(:task).permit(:description, :datedue, :status)
     end
 end

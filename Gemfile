@@ -45,3 +45,4 @@ gem 'rails_12factor', group: :production
 
 gem 'jquery-slick-rails'
 
+gem 'jquery-ui-rails'

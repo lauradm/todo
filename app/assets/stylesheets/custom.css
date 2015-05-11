@@ -113,6 +113,10 @@ a.ourb:hover, a.ourb:active, a.ourb:link, a.ourb:visited {
 	background-color: yellow;
 }
 
+.ajustepanel {
+	height: 220px;
+	overflow-y: auto;
+}
 
 
 
