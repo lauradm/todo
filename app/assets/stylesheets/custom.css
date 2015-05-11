@@ -7,12 +7,18 @@
 	width: 100px;
 	margin: 20px;
 }
+
+.logogente {
+	padding: 15px;
+}
+
 .titlepage{
 	padding-top: 40px;
 }
 .slogan h4{
 	padding-top: 45px;
-	color: red;
+	color: #333;
+
 
 }
 .arbol {
