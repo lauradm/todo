@@ -1,8 +1,9 @@
- f.cabeza {
-	background-color: #dddddd;
-	border-bottom: gray solid 2px;
-
+ .cabeza {
+	background-image: url("backheader.jpg");
+	
 }
+
+
 .logo{
 	width: 100px;
 	margin: 20px;
@@ -12,13 +13,17 @@
 	padding: 15px;
 }
 
-.titlepage{
-	padding-top: 40px;
+.titlepage h1{
+	padding-top: 90px;
+	color: white;
+	text-shadow: 3px 1px #666;
+	font-size: 60px;
 }
 .slogan h4{
-	padding-top: 45px;
-	color: #333;
-
+	padding-top: 20px;
+	font-size: 40px;
+	color: white;
+	text-shadow: 3px 1px #666;
 
 }
 .arbol {
@@ -85,6 +90,7 @@
 }
 
 
+
 .boton	{
 	position: relative;
 	padding: 5px;
@@ -125,6 +131,7 @@ a.ourb:hover, a.ourb:active, a.ourb:link, a.ourb:visited {
 .ajustepanel {
 	height: 220px;
 	overflow-y: auto;
+
 }
 
 
